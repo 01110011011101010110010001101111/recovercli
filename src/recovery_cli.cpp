@@ -19,7 +19,6 @@ int main(int argc, char** argv) {
     std::string keyword_get;
     get_cmd->add_option("-k,--keyword", keyword_get, "Keyword to retrieve the recovery code")->required();
 
-
     CLI11_PARSE(app, argc, argv);
 
     if (*set_cmd) {
